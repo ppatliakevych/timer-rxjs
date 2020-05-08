@@ -1,11 +1,11 @@
 import React from 'react';
 import { Speed } from "./speed.enum";
 
-interface SpeedConfuratorProps {
+interface SpeedConfiguratorProps {
     setSpeed: (value: Speed) => void
 }
 
-export function SpeedConfurator(props: SpeedConfuratorProps) {
+export function SpeedConfigurator(props: SpeedConfiguratorProps) {
 
     return (
         <div className="row">

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { Timer } from './components/timer'
 import { Speed } from './components/speed.enum';
-import { SpeedConfurator } from './components/SpeedConfigurator';
+import { SpeedConfigurator } from './components/SpeedConfigurator';
 
 function App() {
   const [time, setTime] = useState<number>(0);
@@ -17,7 +17,7 @@ function App() {
       </div>
       <div className="timer-component">
       <Timer time={time} onSetTime={setTime} speed={speed} />
-      <SpeedConfurator setSpeed={setSpeed} />
+      <SpeedConfigurator setSpeed={setSpeed} />
       </div>
     </div>
   );
