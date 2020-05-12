@@ -3,11 +3,12 @@ import './App.css';
 import { Timer } from './components/timer'
 import { Speed } from './components/speed.enum';
 import { SpeedConfigurator } from './components/SpeedConfigurator';
+import { timer, Observable, BehaviorSubject, Subscription, defer } from 'rxjs';
+import { finalize, share } from 'rxjs/operators';
 
 function App() {
   const [time, setTime] = useState<number>(0);
   const [speed, setSpeed] = useState<Speed>(1000);
-
 
   return (
     <div className="App-header">
